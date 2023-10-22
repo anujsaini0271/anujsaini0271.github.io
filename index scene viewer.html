@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <!-- <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script> -->
+  <body style="margin : 0px; overflow: hidden; background-image: url('/public/images/housingImage.jpg');
+  background-repeat: no-repeat;
+  background-size: auto;">
+    <!-- <model-viewer ar
+              ar-modes="scene-viewer webxr quick-look"
+              alt="A 3D model of an astronaut."
+              src="https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/Avocado/glTF/Avocado.gltf">
+    </model-viewer> -->
+    <div>
+    <button style="
+        margin-left: 188px;
+    margin-top: 656px;
+    height: 85px;
+    width: 85px;
+    font-size: 40px;
+    color: white;
+    background-color: #5e22e0;" onclick="switchToAR();">AR</button>
+    </div>
+    <div>
+     <button style="
+        margin-left: 100px;
+        margin-top: 457px;
+        height: 85px;
+        width: 85px;
+        font-size: 40px;
+        color: white;
+        background-color: #5e22e0;" onclick="switchToAR();">AR</button>
+     </div>
+    <!-- <a href="intent://arvr.google.com/scene-viewer/1.1?file=https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/Avocado/glTF/Avocado.gltf#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;">Avocado || intent 1.1</a><br><br>
+    <a href="intent://arvr.google.com/scene-viewer/1.1?file=https://github.com/anujroadrage/anujroadrage.github.io/blob/main/public/sonam%20grp%202bhk%200.001.glb?raw=true#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;">Sonam Group 2BHK 0.001  || intent 1.1</a><br><br>
+    
+    <a href="intent://arvr.google.com/scene-viewer/1.0?file=https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/Avocado/glTF/Avocado.gltf#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;">Avocado</a><br><br>
+    <a href="intent://arvr.google.com/scene-viewer/1.0?file=https://github.com/anujroadrage/anujroadrage.github.io/blob/main/public/sonam%20grp%202bhk%200.001.glb?raw=true#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;">Sonam Group 2BHK 0.001</a><br><br> -->
+    
+    <!-- <a-scene embedded arjs='detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
+      <a-assets>
+        <a-asset-item id="almirah" src="./public/sonam grp removed plant.glb"></a-asset-item>
+      </a-assets>
+      <a-marker  type='barcode' value='0'>
+        <a-entity
+          position="0 0 0"
+          scale="0.01 0.01 0.01"
+          gltf-model="#almirah"
+        ></a-entity>
+        <a-entity
+          position="0 0 0"
+          scale="0.01 0.01 0.01"
+          gltf-model="./public/model gltf/bedroom.gltf"
+        ></a-entity>
+        <a-entity
+          position="0 0 0"
+          scale="0.01 0.01 0.01"
+          gltf-model="./public/model gltf/c toilet.gltf"
+        ></a-entity>
+        <a-entity
+          position="0 0 0"
+          scale="0.01 0.01 0.01"
+          gltf-model="./public/model gltf/curtain.gltf"
+        ></a-entity>
+        <a-entity
+          position="0 0 0"
+          scale="0.01 0.01 0.01"
+          gltf-model="./public/model gltf/dining.gltf"
+        ></a-entity>
+        <a-entity
+          position="0 0 0"
+          scale="0.01 0.01 0.01"
+          gltf-model="./public/model gltf/doorWindow.gltf"
+        ></a-entity>
+        <a-entity
+          position="0 0 0"
+          scale="0.01 0.01 0.01"
+          gltf-model="./public/model gltf/floor.gltf"
+        ></a-entity>
+        <a-entity
+          position="0 0 0"
+          scale="0.01 0.01 0.01"
+          gltf-model="./public/model gltf/glass.gltf"
+        ></a-entity>
+        <a-entity
+          position="0 0 0"
+          scale="0.01 0.01 0.01"
+          gltf-model="./public/model gltf/kitchen.gltf"
+        ></a-entity>
+        <a-entity
+          position="0 0 0"
+          scale="0.01 0.01 0.01"
+          gltf-model="./public/model gltf/living.gltf"
+        ></a-entity>
+        <a-entity
+          position="0 0 0"
+          scale="0.01 0.01 0.01"
+          gltf-model="./public/model gltf/M bedroom extra.gltf"
+        ></a-entity>
+        <a-entity
+          position="0 0 0"
+          scale="0.01 0.01 0.01"
+          gltf-model="./public/model gltf/M bedroom.gltf"
+        ></a-entity>
+        <a-entity
+          position="0 0 0"
+          scale="0.01 0.01 0.01"
+          gltf-model="./public/model gltf/M Toilet.gltf"
+        ></a-entity>
+        <a-entity
+          position="0 0 0"
+          scale="0.01 0.01 0.01"
+          gltf-model="./public/model gltf/plant.gltf"
+        ></a-entity>
+        <a-entity
+          position="0 0 0"
+          scale="0.01 0.01 0.01"
+          gltf-model="./public/model gltf/roof.gltf"
+        ></a-entity>
+        <a-entity
+          position="0 0 0"
+          scale="0.01 0.01 0.01"
+          gltf-model="./public/model gltf/wall.gltf"
+        ></a-entity>
+      </a-marker>
+      <a-entity camera></a-entity>
+    </a-scene> -->
+  </body>
+  <script>
+    function switchToAR()
+    {
+      location.href = "intent://arvr.google.com/scene-viewer/1.0?file=https://github.com/anujroadrage/anujroadrage.github.io/blob/main/public/sonam%20grp%202bhk%200.001.glb?raw=true#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;";
+    }
+  </script>
+</html>
